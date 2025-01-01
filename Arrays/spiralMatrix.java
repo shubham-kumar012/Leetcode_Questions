@@ -22,7 +22,7 @@ class Solution {
 
             //bottom
             for(int i=endCol-1; i>=startCol; i--) {
-                // if m x n are odd (to print last single element only once)
+                // if m or n are odd (to print last single element only once)
                 // which is already add to an result so we don't add again
                 if(startRow == endRow) break;
                 result.add(matrix[endRow][i]);
