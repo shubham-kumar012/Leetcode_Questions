@@ -1,6 +1,6 @@
 // Q.3370 Easy
 // Leetcode - https://leetcode.com/problems/smallest-number-with-all-set-bits/?envType=problem-list-v2&envId=bit-manipulation
-
+                          
 // T.C. -> O(n)
 // S.C. -> O(1)
 class Solution {
