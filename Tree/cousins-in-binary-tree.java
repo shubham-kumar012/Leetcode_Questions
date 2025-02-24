@@ -1,8 +1,8 @@
 // Q.993 Easy
 // Leetcode - https://leetcode.com/problems/cousins-in-binary-tree/
 
-// T.C. -> 
-// S.C. -> 
+// T.C. -> O(n)
+// S.C. -> O(n)
 class Solution {
     
     // It store info of a node's parent and depth
@@ -23,6 +23,7 @@ class Solution {
         //       parent's not equal to null               &&     depth should be same     &&   parent's should not be equal
         return infoX.parent != null && infoY.parent != null && infoX.depth == infoY.depth && infoX.parent != infoY.parent;
     }
+    
     private NodeInfo getParentAndDepth(TreeNode root, int n, TreeNode parent, int depth) {
         if(root == null)  {
             return null;
