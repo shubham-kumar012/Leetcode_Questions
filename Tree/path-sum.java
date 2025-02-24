@@ -1,8 +1,8 @@
 // Q.112 Easy
 // Leetcode - https://leetcode.com/problems/path-sum/description/
 
-// T.C. -> 
-// S.C. ->
+// T.C. -> O(n)
+// S.C. -> O(n)
 class Solution {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if(root == null) return false; // if root are null so return false
