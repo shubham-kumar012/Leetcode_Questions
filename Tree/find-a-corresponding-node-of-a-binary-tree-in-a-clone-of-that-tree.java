@@ -1,3 +1,5 @@
+// Time Complexity - O(N)
+// Spacce Complexity - O(1)
 // Leetcode - https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/
 
 class Solution {
