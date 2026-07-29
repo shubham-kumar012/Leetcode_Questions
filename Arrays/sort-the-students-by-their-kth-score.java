@@ -1,0 +1,30 @@
+// Time Complexity - O(M^2)
+// Space Complexity - O(1)
+
+class Solution {
+    public int[][] sortTheStudents(int[][] score, int k) {
+        int m = score[0].length;
+        int n = score.length;
+
+        for(int i=0; i<n-1; i++) {
+            boolean swapped = false;
+
+            for(int j=0; j<n-i-1; j++) {
+                if(score[j][k] < score[j+1][k]) {
+                    //swap
+                    int[] temp = score[j];
+                    score[j] = score[j+1];
+                    score[j+1] = temp;
+
+                    swapped = true;
+                }
+            }
+
+            if(!swapped) {
+                break;
+            }
+        }
+
+        return score;
+    }
+}
